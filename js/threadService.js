@@ -7,11 +7,11 @@ angular.module("rtfmApp")
 		};
 		
 		this.getThread = function (threadId) {
-			return new Firebase(fb + "/threads" + "threadId");	
+			return new Firebase(fb + "/threads/" + threadId);	
 		};
 		
 		this.getComments = function(threadId) {
-			return new Firebase(fb + "/threads" + "threadId" + "/comments");
+			return new Firebase(fb + "/threads/" + threadId + "/comments");
 		};
 		
-	})
+	});

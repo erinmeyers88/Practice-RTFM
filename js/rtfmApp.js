@@ -32,6 +32,6 @@ angular.module("rtfmApp", ["firebase", "ui.router"])
 			});
 
 
-		// $urlRouterProvider.otherwise("/threads");
+		$urlRouterProvider.otherwise("/threads");
 
 	});
